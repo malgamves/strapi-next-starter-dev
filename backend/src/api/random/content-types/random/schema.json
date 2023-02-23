@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "randoms",
+  "info": {
+    "singularName": "random",
+    "pluralName": "randoms",
+    "displayName": "random"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "random"
+    }
+  }
+}
